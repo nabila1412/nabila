@@ -2,6 +2,8 @@
 include 'database_latihan.php';
 $db = new database();
 
+
+
 $aksi = $_GET['aksi'];
 if($aksi == "tambah") {
 	$db->input($_POST['program_pendidikan'],$_POST['nama_lengkap'],$_POST['email']);
